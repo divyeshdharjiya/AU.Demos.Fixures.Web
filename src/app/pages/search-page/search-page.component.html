@@ -1,0 +1,8 @@
+<div class="search-container" style="margin-top: 25px;">
+  <form class="search-form">
+    <mat-form-field class="text-search">
+      <input matInput placeholder="Search" [formControl]="searchField" #input (input)="sendTextValue(input.value)">
+    </mat-form-field>
+  </form>
+  <app-search-result [myInputVal]="input.value"></app-search-result>
+</div>
